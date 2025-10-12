@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
+import { waHref } from "../constants";
 
 export default function ChamadaParaAventura() {
   return (
@@ -51,12 +53,24 @@ export default function ChamadaParaAventura() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="mt-8"
         >
-          <a
-            href="mailto:discoverusa@gmail.com"
-            className="inline-block bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition"
-          >
-            Começar agora
-          </a>
+          <div className="flex justify-center gap-4">
+            <a
+              href="mailto:discoverusa@gmail.com"
+              className="inline-block bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition"
+            >
+              Começar agora
+            </a>
+            <a
+              href={waHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Falar no WhatsApp"
+              className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold text-blue-900 shadow hover:opacity-90 transition"
+            >
+              <FaWhatsapp size={32} />
+              WhatsApp
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

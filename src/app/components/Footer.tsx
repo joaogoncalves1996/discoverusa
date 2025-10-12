@@ -1,8 +1,9 @@
 import React from "react";
-import { FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import Link from "next/link";
+import { waHref } from "../constants";
 
 export default function Footer() {
   return (
@@ -38,6 +39,7 @@ export default function Footer() {
               href="https://instagram.com/discoverusa"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
             >
               <FaInstagram
                 size={24}
@@ -48,6 +50,7 @@ export default function Footer() {
               href="https://tiktok.com/@discoverusa"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="TikTok"
             >
               <FaTiktok size={24} className="hover:text-blue-300 transition" />
             </a>
@@ -55,8 +58,20 @@ export default function Footer() {
               href="https://linkedin.com/company/discoverusa"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
               <FaLinkedin
+                size={24}
+                className="hover:text-blue-300 transition"
+              />
+            </a>
+            <a
+              href={waHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp
                 size={24}
                 className="hover:text-blue-300 transition"
               />

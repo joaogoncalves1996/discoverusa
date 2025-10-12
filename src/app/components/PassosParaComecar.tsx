@@ -58,21 +58,6 @@ export default function PassosParaComecar() {
           </motion.div>
         ))}
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className="text-center mt-12"
-      >
-        <a
-          href="mailto:discoverusa@gmail.com"
-          className="inline-block bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition"
-        >
-          Entrar em contacto
-        </a>
-      </motion.div>
     </section>
   );
 }

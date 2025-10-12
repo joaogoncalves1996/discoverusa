@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaWhatsapp } from "react-icons/fa";
+import { waHref } from "../constants";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +44,16 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+        <a
+          href={waHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Falar no WhatsApp"
+          className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold text-blue-900 shadow hover:opacity-90 transition"
+        >
+          <FaWhatsapp size={18} />
+          WhatsApp
+        </a>
 
         {/* Mobile Menu Icon */}
         <button
