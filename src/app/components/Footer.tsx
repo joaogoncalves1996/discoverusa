@@ -23,12 +23,19 @@ export default function Footer() {
         {/* Contacto */}
         <div className="text-center md:text-left space-y-3">
           <h3 className="text-lg font-semibold">Contacto</h3>
-          <p className="flex justify-center md:justify-start items-center gap-2 text-sm">
-            <MdEmail size={18} /> discoverusa@gmail.com
-          </p>
-          <p className="flex justify-center md:justify-start items-center gap-2 text-sm">
-            <BsTelephoneFill size={16} /> +351 913422406 | +351 934255235
-          </p>
+          <a
+            className="flex justify-center md:justify-start items-center gap-2 text-sm"
+            href="mailto:info@discoverusaoficial.com
+          "
+          >
+            <MdEmail size={18} /> info@discoverusaoficial.com
+          </a>
+          <a
+            className="flex justify-center md:justify-start items-center gap-2 text-sm"
+            href="tel:+351936927357"
+          >
+            <BsTelephoneFill size={16} /> +351 936927357
+          </a>
         </div>
 
         {/* Redes Sociais */}
@@ -36,7 +43,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold">Segue-nos</h3>
           <div className="flex justify-center md:justify-start gap-6">
             <a
-              href="https://instagram.com/discoverusa"
+              href="https://instagram.com/Discover_USA_oficial"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -47,7 +54,7 @@ export default function Footer() {
               />
             </a>
             <a
-              href="https://tiktok.com/@discoverusa"
+              href="https://tiktok.com/@Discoverusa_oficial"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"

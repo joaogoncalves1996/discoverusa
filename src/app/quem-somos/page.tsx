@@ -39,17 +39,52 @@ export default function QuemSomos() {
             <h2 className="text-3xl font-semibold text-blue-800">
               Tudo começou com uma viagem
             </h2>
-            <p>
-              Em 2022, eu e o Hugo decidimos fazer o{" "}
-              <strong>Work & Travel USA</strong>. Trabalhámos em New Jersey,
-              conhecemos pessoas incríveis e descobrimos o melhor dos EUA.
-            </p>
-            <p>
-              No ano seguinte, voltei sozinho para Maryland. E foi aí que
-              percebi: <strong>havia quase nenhum português</strong> nos
-              programas.
-            </p>
-            <p>Criámos a Discover USA para mudar isso.</p>
+            <ul className="space-y-2 text-sm sm:text-base text-slate-700 leading-relaxed">
+              <li className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>
+                  Em 2022, eu e o Hugo participámos num programa de Work &
+                  Travel ainda pouco conhecido em Portugal.
+                </span>
+              </li>
+
+              <li className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>
+                  Trabalhámos em New Jersey, conhecemos pessoas incríveis e
+                  descobrimos o melhor dos Estados Unidos.
+                </span>
+              </li>
+
+              <li className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>
+                  No ano seguinte, voltei sozinho para Maryland e percebi que
+                  quase não havia portugueses a participar neste tipo de
+                  programas.
+                </span>
+              </li>
+
+              <li className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>
+                  Vi aí uma oportunidade e criei a{" "}
+                  <strong className="font-semibold text-blue-600">
+                    Discover USA
+                  </strong>
+                  .
+                </span>
+              </li>
+
+              <li className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>
+                  A missão da Discover USA é aproximar jovens portugueses de
+                  experiências únicas de Work & Travel, ajudando-os a explorar
+                  os EUA com segurança, orientação e inspiração.
+                </span>
+              </li>
+            </ul>
           </motion.div>
 
           <motion.div
@@ -57,7 +92,7 @@ export default function QuemSomos() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="w-full h-64 bg-[url('/usa-banner.jpg')] bg-cover bg-center rounded-xl shadow-lg hover:scale-105 transition-transform"
+            className="w-full h-64 bg-[url('/team.jpeg')] bg-cover bg-center rounded-xl shadow-lg hover:scale-105 transition-transform"
           />
         </div>
       </section>

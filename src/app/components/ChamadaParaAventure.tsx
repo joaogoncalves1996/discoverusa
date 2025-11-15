@@ -5,6 +5,15 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { waHref } from "../constants";
 
+declare global {
+  interface Window {
+    Calendly: {
+      initPopupWidget(options: { url: string }): void;
+      closePopupWidget?(): void;
+    };
+  }
+}
+
 export default function ChamadaParaAventura() {
   return (
     <section className="bg-blue-100 py-20 px-4">
@@ -16,10 +25,10 @@ export default function ChamadaParaAventura() {
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl font-bold text-blue-900 mb-4"
         >
-          Está a um passo de começar a sua aventura!
+          Estás a um passo de começar a tua aventura!
         </motion.h2>
         <p className="text-xl text-blue-800 mb-10">
-          Viva o sonho americano com a Discover USA
+          Vive o sonho americano com a DiscoverUSA
         </p>
 
         <motion.ul
@@ -30,20 +39,20 @@ export default function ChamadaParaAventura() {
           className="text-lg text-blue-900 space-y-4 text-left max-w-xl mx-auto mb-8"
         >
           <li>
-            ✨ Têm espírito aventureiro e querem explorar novos horizontes
+            ✨ Tens espírito aventureiro e queres explorar novos horizontes?
           </li>
           <li>
-            ✈️ Sonham em viajar e mergulhar numa experiência autêntica nos EUA
+            ✈️ Sonhas em viajar e mergulhar numa experiência autêntica nos EUA?
           </li>
           <li>
-            🗣️ Querem melhorar o inglês de forma natural, vivendo o dia a dia
-            americano
+            🗣️ Queres melhorar o teu inglês de forma natural, vivendo o dia a
+            dia americano?
           </li>
         </motion.ul>
 
         <p className="text-lg text-blue-800 font-medium max-w-2xl mx-auto">
-          Se isto soa a ti, está na hora de dar o próximo passo para transformar
-          o sonho numa realidade.
+          Se isto soa a ti, está na hora de dar o próximo passo e transformar o
+          teu sonho em realidade.
         </p>
 
         <motion.div
@@ -54,12 +63,17 @@ export default function ChamadaParaAventura() {
           className="mt-8"
         >
           <div className="flex justify-center gap-4">
-            <a
-              href="mailto:discoverusa@gmail.com"
-              className="inline-block bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition"
+            <button
+              onClick={() =>
+                window.Calendly.initPopupWidget({
+                  url: "https://calendly.com/joaopcgoncalves99/new-meeting",
+                })
+              }
+              className="inline-block bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition cursor-pointer"
             >
-              Começar agora
-            </a>
+              Agende uma reunião
+            </button>
+
             <a
               href={waHref}
               target="_blank"

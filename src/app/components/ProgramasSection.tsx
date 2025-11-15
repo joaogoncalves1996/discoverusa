@@ -7,7 +7,7 @@ const programas = [
   {
     title: "Work and Travel USA",
     description:
-      "Se és estudante universitário e queres passar o próximo verão a viajar pelos EUA, a conhecer pessoas, a melhorar o teu inglês e a trabalhar em sítios fantásticos por mais de 2000 dólares por mês… este programa é para ti!",
+      "Queres um verão diferente? Com o Work and Travel USA, vais trabalhar, viajar, fazer amigos de todo o mundo, melhorar o teu inglês e ainda ganhar mais de 2.000 dólares por mês. Uma experiência que nunca vais esquecer!",
   },
   {
     title: "Au Pair USA",

@@ -28,6 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
+
+        {/* Calendly widget script */}
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="afterInteractive"
+        />
+
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-M4BNW9W89T"
