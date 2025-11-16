@@ -66,7 +66,7 @@ export default function ChamadaParaAventura() {
             <button
               onClick={() =>
                 window.Calendly.initPopupWidget({
-                  url: "https://calendly.com/joaopcgoncalves99/new-meeting",
+                  url: "https://calendly.com/discoverusaoficial-info/20min",
                 })
               }
               className="inline-block bg-blue-800 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition cursor-pointer"
